@@ -1,0 +1,13 @@
+Aviso relacionado ao NCHAR()
+
+
+CREATE TABLE etapa (
+    id INT PRIMARY KEY auto_increment,
+    instrucao LONGTEXT,
+    ponto INT,
+    tipo NCHAR(1),
+    fk_verbo_id INT
+);
+
+
+20:59:34	CREATE TABLE etapa (     id INT PRIMARY KEY auto_increment,     instrucao LONGTEXT,     ponto INT,     tipo NCHAR(1),     fk_verbo_id INT )	0 row(s) affected, 1 warning(s): 3720 NATIONAL/NCHAR/NVARCHAR implies the character set UTF8MB3, which will be replaced by UTF8MB4 in a future release. Please consider using CHAR(x) CHARACTER SET UTF8MB4 in order to be unambiguous.	0.765 sec
